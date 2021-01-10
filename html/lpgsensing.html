@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>mhwip</title>
+  <link href="../resources/css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<div class="sidenav">
+    <a href="../index.html" class='title'>MATT HAMILTON</a>
+    <br><br>
+    <a href="about.html">About</a>
+    <a href="../index.html">Work in progress</a>
+    <ul>
+        <a href="scene.html">  Scene</a>
+        <a href="onlineoffline.html">  Online offline</a>
+        <a href="lpgsensing.html">  LPG sensing</a>
+    </ul>
+    <a href="../index.html">Past work</a>
+    <ul>
+        <a href="circularsolar.html">  Circular solar</a>
+        <a href="despsych.html">Voice services</a>
+        <a href="mkopalabs.html">  M-KOPA Labs</a> 
+        <a href="externalgut.html">  External gut</a>
+        <a href="futuretextiles.html">  Future textiles</a>
+        <a href="drill.html">  Drill</a>
+        <a href="mangopackaging.html">  Mango packaging</a>
+        <a href="thinktank.html">  Think tank</a>
+        <a href="jumpingrobot.html">  Jumping robot</a>
+        <a href="tetriminoproblem.html">  Tetrimino problem</a>
+    </ul>  
+</div>
+
+<h1>LPG Sensing</h1>
+
+<div class="main" style="width: 5440px; column-count: 16;">
+    <div>
+    <p>There is currently no inexpensive and accurate way to monitor the usage of liquified petroleum gas (LPG) from a cylinder. This results in inefficient delivery and reverse logistics systems in countries where LPG is a common cooking fuel (and there is no gas grid); and reduced penetration of LPG in developing countries – where lack of access to modern energy cooking has many negative socio-economic implications.</p>
+    <p>This project aims to exploit the underlying physics of LPG to develop a novel connected LPG monitoring device. LPG is stored in cylinders as a liquid at high pressure, but it boils at -42°C under atmospheric conditions. When LPG is being used, the pressure of the cylinder drops and the liquid begins to boil, producing petroleum gas for cooking. As LPG boils, it absorbs energy from its surroundings and so the temperature of the cylinder drops. This project tested the hypothesis that it is possible to determine how much LPG is used, just by measuring the external temperature of the cannister. As temperature sensors are affordable and have low power requirements, they could be incorporated into a discrete sensing and internet of things device that is permanently affixed to the LPG cylinder (much like the RFID GPS trackers on Beer kegs).</p>
+    <p>I investigated this hypothesis by building a LPG sensing rig which my housemate and I used to cook all of our meals. Using the data collected I built a machine learning model (with an F1 score of 0.89) which could predict our LPG usage and notify us when we needed to replace our cylinder. </p>
+    </div>
+    
+    <div class="picsnvids">
+        <figure>
+            <iframe class="vids"
+            src="https://www.youtube.com/embed/19WhFLU_zf0?controls=1">   
+            </iframe>
+            <figcaption>Project Video </figcaption>
+        </figure>
+    
+        <figure>
+            <img src="../resources/images/sensing_setup1.jpg">
+            <figcaption>Sensing set-up; a Wii balance board and a Raspberry pi.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="../resources/images/sensing_setup2.jpg">
+            <figcaption>Cooking set-up</figcaption>
+        </figure>
+
+        <figure>
+            <img src="../resources/images/bagels.jpg">
+            <figcaption>Slower than a toaster!</figcaption>
+        </figure>
+
+        <figure>
+            <img src="../resources/images/modelfeatures.PNG">
+            <figcaption>ML model features for a cooking event.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="../resources/images/Modelperformance.PNG">
+            <figcaption>ML model performance. Only one datapoint is labelled incorrectly!</figcaption>
+        </figure>
+
+    </div>
+    
+    
+    
+</div>   
+</body>
+</html>
